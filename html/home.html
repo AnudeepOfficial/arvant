@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arvant Partners</title>
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Times+New+Roman&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --theme-txt: #3B5751;
+    }
+
+    body {
+      font-family: 'Work Sans', sans-serif;
+    }
+
+    .img-container {
+      width: 100%;
+      height: 230px;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(50px);
+      animation: bottomToTop 0.8s ease-out forwards;
+    }
+
+    .img-container:nth-child(1) {
+      animation-delay: 0s;
+    }
+
+    .img-container:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .img-container:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+
+    .img-container:nth-child(4) {
+      animation-delay: 0.6s;
+    }
+
+    @keyframes bottomToTop {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .font-times-new-roman {
+      font-family: 'Times New Roman';
+      letter-spacing: 0.05rem;
+    }
+  </style>
+
+
+</head>
+
+<body class="bg-gray-100">
+  <header class="container mx-auto px-4 py-6 flex justify-center">
+    <img src="../images/logo.png" alt="Arvant Partners Logo" class="h-[300px]">
+  </header>
+
+  <main class="container mx-auto px-4 py-8  lg:h-[calc(100vh-440px)] " >
+    <div class="text-center">
+      <p class="text-[#3B5751] text-md sm:text-xl font-medium w-[90%] sm:w-3/4 mx-auto text-pretty">
+        Arvant Partners is an independent merchant capital firm delivering tailored private capital solutions across
+        asset classes, with a primary focus on infrastructure investments in North America and Europe.
+      </p>
+      <div class="mt-5">
+        <a href="#" class="text-[#007F5C] hover:text-[#007F5C] text-lg/[28px] sm:text-2xl/[28px] font-bold font-times-new-roman">Contact Us</a><br>
+        <a href="mailto:info@arvant.com" class="text-[#007F5C] hover:text-[#007F5C] text-xl/[28px] font-medium underline ">info@arvant.com</a>
+      </div>
+    </div>
+
+    <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      <img src="../images/br.png" alt="Infrastructure 1" class="rounded-md img-container">
+      <img src="../images/cs.png" alt="Infrastructure 2" class="rounded-md img-container">
+      <img src="../images/hw.png" alt="Infrastructure 3" class="rounded-md img-container">
+      <img src="../images/dc.png" alt="Infrastructure 4" class="rounded-md img-container">
+    </div>
+  </main>
+
+  <footer class="bg-[#007F5C] text-white text-center py-4 mt-8 text-sm sm:text-lg">
+    Copyright © 2025 Arvant Partners. All Rights Reserved.
+  </footer>
+</body>
+
+</html>
+
